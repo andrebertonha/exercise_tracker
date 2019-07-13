@@ -7,7 +7,12 @@ const Users = require('./models/users')
 const Exercises = require('./models/exercises')
 
 const mongoose = require('mongoose')
-mongoose.connect('mongodb://localhost:27017/exercise_tracker', { useNewUrlParser: true })
+
+require('dotenv').config()
+
+//mongoose.connect('mongodb://localhost:27017/exercise_tracker', { useNewUrlParser: true })
+
+mongoose.connect(process.env.MLAB_URI, { useNewUrlParser: true })
 
 app.use(cors())
 
