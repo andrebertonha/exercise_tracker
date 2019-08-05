@@ -1,2 +1,6 @@
-# exercise_tracker
-nodejs api backend project
+# Exercise Tracker
+
+  + nodejs api backend freecodecamp project
+  + npm install
+    + connect to a database
+    + npm start
